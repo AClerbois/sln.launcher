@@ -6,7 +6,7 @@ If like me, you like to play as much as possible with the command lines and you 
 A dotnet tools allows you to launch Visual Studio with a .sln file in the current directory. In the case of several available files, the user is asked to select one.
 
 ## Build status 
-[![Build Status](https://aclerbois.visualstudio.com/aclerbois.sln.launcher/_apis/build/status/aclerbois.sln.launcher-CI)](https://aclerbois.visualstudio.com/aclerbois.sln.launcher/_build/latest?definitionId=12)
+[![Build Status](https://aclerbois.visualstudio.com/aclerbois.sln.launcher/_apis/build/status/BEAClerbois.sln.launcher?branchName=master)](https://aclerbois.visualstudio.com/aclerbois.sln.launcher/_build/latest?definitionId=14&branchName=master)
 
 ## Deployment status
 [![Deployment Status](https://aclerbois.vsrm.visualstudio.com/_apis/public/Release/badge/a08f2184-e493-41ce-af0f-7ffbc4a8ed53/1/1)](https://aclerbois.visualstudio.com/aclerbois.sln.launcher/_release?definitionId=1)
@@ -16,7 +16,7 @@ In order to use this tool, you must have the .NET Core SDK 2.1+.
 You can install the tool by running the following line.
 
 ```shell
-dotnet tool install --global sln.launcher --version 1.0.0
+dotnet tool install --global sln.launcher --version 1.0.2
 ```
 
 ## How to use
@@ -44,5 +44,3 @@ And finally, you must have the.sln extensions which have as default program Visu
 ## Credit logo
 ![Designed by Dooder](/icon.jpg)
 [Designed by Dooder](https://www.freepik.com/free-vector/businessman-over-a-rocket_1076127.htm)
-
-
