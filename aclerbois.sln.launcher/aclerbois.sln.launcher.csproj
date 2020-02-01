@@ -5,16 +5,22 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>sln</ToolCommandName>
-    <Version>1.0.2</Version>
+    <Version>1.1.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>sln.launcher</PackageId>
     <Authors>AClerbois</Authors>
     <Description>Sln.launcher is a dotnet tools allows you to launch Visual Studio with a .sln file from a command prompt in the current directory. In the case of several available files, the user is asked to select one.</Description>
-    <Copyright>AClerbois 2018</Copyright>
+    <Copyright>AClerbois 2020</Copyright>
     <PackageProjectUrl>https://github.com/beaclerbois/sln.launcher</PackageProjectUrl>
     <RepositoryUrl>https://github.com/beaclerbois/sln.launcher</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>dotnet-tools;sln-launcher;sln;command-line;</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/aclerbois/sln.launcher/master/icon.jpg</PackageIconUrl>
+    <PackageReleaseNotes>1.0.0 : 
+ - Initial project
+1.0.2 :
+ - Transfer GitHub account
+1.1.0 : 
+ - Sln search includes now subfolder (proposed by and developped by @jmhumblet)</PackageReleaseNotes>
   </PropertyGroup>
 </Project>
