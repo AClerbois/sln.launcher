@@ -9,12 +9,14 @@ namespace aclerbois.sln.launcher
     {
         private static void Main(string[] args)
         {
-            var solutionFiles = Directory.EnumerateFiles(Environment.CurrentDirectory, "*.sln");
+            var solutionFiles = Directory.EnumerateFiles(Environment.CurrentDirectory, "*.sln", SearchOption.AllDirectories).ToArray();
+            
             if (!solutionFiles.Any())
             {
                 Console.WriteLine("No solution file found in this directory.");
                 return;
             }
+
             if (solutionFiles.Count() == 1)
             {
                 ExecuteSolution(solutionFiles.First());
@@ -30,18 +32,18 @@ namespace aclerbois.sln.launcher
                 i++;
             }
             Console.Write("Your choice: ");
-            var isSuccessfullyParsed = GetFileChoice(out int solutionIndexChoiced, solutionFiles.Count());
+            var isSuccessfullyParsed = GetFileChoice(out int chosenSolutionIndex, solutionFiles.Count());
             while (!isSuccessfullyParsed)
             {
                 Console.Write("Invalid choice, please try again: ");
-                isSuccessfullyParsed = GetFileChoice(out solutionIndexChoiced, solutionFiles.Count());
+                isSuccessfullyParsed = GetFileChoice(out chosenSolutionIndex, solutionFiles.Count());
             }
-            ExecuteSolution(solutionFiles.ToArray()[solutionIndexChoiced - 1]);
+            ExecuteSolution(solutionFiles.ToArray()[chosenSolutionIndex - 1]);
         }
 
-        private static bool GetFileChoice(out int solutionIndexChoiced, int maximum)
+        private static bool GetFileChoice(out int chosenSolutionIndex, int maximum)
         {
-            return int.TryParse(Console.ReadLine(), out solutionIndexChoiced) && solutionIndexChoiced > 0 && solutionIndexChoiced <= maximum;
+            return int.TryParse(Console.ReadLine(), out chosenSolutionIndex) && chosenSolutionIndex > 0 && chosenSolutionIndex <= maximum;
         }
 
         private static void ExecuteSolution(string fileName)
