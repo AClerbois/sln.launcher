@@ -6,7 +6,7 @@ If like me, you like to play as much as possible with the command lines and you 
 A dotnet tools allows you to launch Visual Studio with a .sln file in the current directory. In the case of several available files, the user is asked to select one.
 
 ## Build status 
-[![Build Status](https://aclerbois.visualstudio.com/aclerbois.sln.launcher/_apis/build/status/BEAClerbois.sln.launcher?branchName=master)](https://aclerbois.visualstudio.com/aclerbois.sln.launcher/_build/latest?definitionId=14&branchName=master)
+[![Build Status](https://aclerbois.visualstudio.com/aclerbois.sln.launcher/_apis/build/status/AClerbois.sln.launcher?branchName=master)](https://aclerbois.visualstudio.com/aclerbois.sln.launcher/_build/latest?definitionId=15&branchName=master)
 
 ## Deployment status
 [![Deployment Status](https://aclerbois.vsrm.visualstudio.com/_apis/public/Release/badge/a08f2184-e493-41ce-af0f-7ffbc4a8ed53/1/1)](https://aclerbois.visualstudio.com/aclerbois.sln.launcher/_release?definitionId=1)
