@@ -4,6 +4,9 @@
 pool:
   vmImage: 'Ubuntu 16.04'
   
+trigger:
+- master
+
 variables:
   buildConfiguration: 'Release'
 
