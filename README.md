@@ -16,7 +16,7 @@ In order to use this tool, you must have the .NET Core SDK 2.1+.
 You can install the tool by running the following line.
 
 ```shell
-dotnet tool install --global sln.launcher --version 1.0.2
+dotnet tool install --global sln.launcher --version 1.1.1
 ```
 
 ## How to use
