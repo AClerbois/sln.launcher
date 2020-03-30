@@ -5,7 +5,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>sln</ToolCommandName>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>sln.launcher</PackageId>
     <Authors>AClerbois</Authors>
@@ -21,6 +21,9 @@
 1.0.2 :
  - Transfer GitHub account
 1.1.0 : 
- - Sln search includes now subfolder (proposed by and developped by @jmhumblet)</PackageReleaseNotes>
+ - Sln search includes now subfolder (proposed by and developped by @jmhumblet)
+1.1.1 : 
+ - Fix release
+    </PackageReleaseNotes>
   </PropertyGroup>
 </Project>
