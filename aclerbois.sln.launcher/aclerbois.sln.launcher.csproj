@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFrameworks>netcoreapp2.1;net5.0</TargetFrameworks>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>sln</ToolCommandName>
-    <Version>1.1.1</Version>
+    <Version>1.2.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>sln.launcher</PackageId>
     <Authors>AClerbois</Authors>
@@ -16,14 +16,17 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>dotnet-tools;sln-launcher;sln;command-line;</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/aclerbois/sln.launcher/master/icon.jpg</PackageIconUrl>
-    <PackageReleaseNotes>1.0.0 : 
- - Initial project
-1.0.2 :
- - Transfer GitHub account
-1.1.0 : 
- - Sln search includes now subfolder (proposed by and developped by @jmhumblet)
-1.1.1 : 
- - Fix release
+    <PackageReleaseNotes>
+      1.0.0 :
+      - Initial project
+      1.0.2 :
+      - Transfer GitHub account
+      1.1.0 :
+      - Sln search includes now subfolder (proposed by and developped by @jmhumblet)
+      1.1.1 :
+      - Fix release
+      1.2.0 :
+      - Add target framework with net5.0
     </PackageReleaseNotes>
   </PropertyGroup>
 </Project>
