@@ -2,15 +2,17 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>netcoreapp2.1;net5.0</TargetFrameworks>
+    <TargetFrameworks>netcoreapp2.1;net5.0;net8.0</TargetFrameworks>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>sln</ToolCommandName>
     <Version>1.2.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>sln.launcher</PackageId>
     <Authors>AClerbois</Authors>
-    <Description>Sln.launcher is a dotnet tools allows you to launch Visual Studio with a .sln file from a command prompt in the current directory. In the case of several available files, the user is asked to select one.</Description>
-    <Copyright>AClerbois 2020</Copyright>
+    <Description>Sln.launcher is a dotnet tools allows you to launch Visual Studio with a .sln file
+      from a command prompt in the current directory. In the case of several available files, the
+      user is asked to select one.</Description>
+    <Copyright>AClerbois 2023</Copyright>
     <PackageProjectUrl>https://github.com/beaclerbois/sln.launcher</PackageProjectUrl>
     <RepositoryUrl>https://github.com/beaclerbois/sln.launcher</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
@@ -27,6 +29,8 @@
       - Fix release
       1.2.0 :
       - Add target framework with net5.0
+      1.3.0 :
+      - Add target framework with net8.0
     </PackageReleaseNotes>
   </PropertyGroup>
 </Project>
