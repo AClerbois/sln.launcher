@@ -1,22 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>netcoreapp2.1;net5.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>sln</ToolCommandName>
-    <Version>1.3.0</Version>
+    <Version>2.0.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>sln.launcher</PackageId>
     <Authors>AClerbois</Authors>
     <Description>Sln.launcher is a dotnet tools allows you to launch Visual Studio with a .sln file
       from a command prompt in the current directory. In the case of several available files, the
       user is asked to select one.</Description>
-    <Copyright>AClerbois 2023</Copyright>
-    <PackageProjectUrl>https://github.com/beaclerbois/sln.launcher</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/beaclerbois/sln.launcher</RepositoryUrl>
+    <Copyright>AClerbois 2025</Copyright>
+    <PackageProjectUrl>https://github.com/aclerbois/sln.launcher</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/aclerbois/sln.launcher</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>dotnet-tools;sln-launcher;sln;command-line;</PackageTags>
+    <PackageIcon>icon.jpg</PackageIcon>
     <PackageIconUrl>https://raw.githubusercontent.com/aclerbois/sln.launcher/master/icon.jpg</PackageIconUrl>
     <PackageReleaseNotes>
       1.0.0 :
@@ -31,6 +31,13 @@
       - Add target framework with net5.0
       1.3.0 :
       - Add target framework with net8.0
+      2.0.0 :
+      - Use Spectre.Console to display the list of solutions and selection
+      - Remove oldest target framework and support only net8.0 and net9.0
     </PackageReleaseNotes>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\icon.jpg" Pack="true" PackagePath="\"/>
+    <PackageReference Include="Spectre.Console" />
+  </ItemGroup>
 </Project>
