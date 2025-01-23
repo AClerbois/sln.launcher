@@ -2,7 +2,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core?view=vsts
 
 pool:
-  vmImage: "Ubuntu 20.04"
+  vmImage: "Ubuntu-latest"
 
 trigger:
   - master
