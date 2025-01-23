@@ -17,6 +17,7 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>dotnet-tools;sln-launcher;sln;command-line;</PackageTags>
     <PackageIcon>icon.jpg</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIconUrl>https://raw.githubusercontent.com/aclerbois/sln.launcher/master/icon.jpg</PackageIconUrl>
     <PackageReleaseNotes>
       1.0.0 :
@@ -38,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\icon.jpg" Pack="true" PackagePath="\"/>
+    <None Include="..\README.md" Pack="true" PackagePath="\"/>
     <PackageReference Include="Spectre.Console" />
   </ItemGroup>
 </Project>

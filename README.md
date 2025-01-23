@@ -12,11 +12,11 @@ A dotnet tools allows you to launch Visual Studio with a .sln file in the curren
 [![Deployment Status](https://aclerbois.vsrm.visualstudio.com/_apis/public/Release/badge/a08f2184-e493-41ce-af0f-7ffbc4a8ed53/1/1)](https://aclerbois.visualstudio.com/aclerbois.sln.launcher/_release?definitionId=1)
 
 ## How to install
-In order to use this tool, you must have the .NET Core SDK 2.1+.
+In order to use this tool, you must have the .NET 8+.
 You can install the tool by running the following line.
 
 ```shell
-dotnet tool install --global sln.launcher --version 1.1.1
+dotnet tool install --global sln.launcher --version 2.0.0
 ```
 
 ## How to use
@@ -37,7 +37,7 @@ In case you have more than one file with the extension sln in the folder, the pr
 
 In order to use this dotnet tools, you must have installed on your computer: 
 - [Visual Studio](https://visualstudio.microsoft.com/fr/)
-- [.NET Core SDK 2.1+](https://www.microsoft.com/net/download)
+- [.NET SDK 8+](https://www.microsoft.com/net/download)
 
 And finally, you must have the.sln extensions which have as default program Visual Studio. 
 
