@@ -13,18 +13,18 @@ variables:
 steps:
   # install sdk .net 9.0
   - task: UseDotNet@2
+    displayName: 'Use .NET SDK 9.x'
     inputs:
-      packageType: "sdk"
-      version: "9.x"
-    name: 'Use .NET SDK 9.x'
+      packageType: 'sdk'
+      version: '9.x'
 
   - script: dotnet build --configuration $(buildConfiguration)
-    name: 'dotnet Build'
+    displayName: 'dotnet Build'
 
   - script: dotnet pack --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
-    name: 'dotnet Pack'
+    displayName: 'dotnet Pack'
 
   - task: PublishBuildArtifacts@1
-    name: 'Publish Artifact'
+    displayName: 'Publish Artifact'
     inputs:
       pathtoPublish: "$(Build.ArtifactStagingDirectory)"
