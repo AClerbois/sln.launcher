@@ -15,8 +15,8 @@ steps:
   - task: UseDotNet@2
     inputs:
       packageType: "sdk"
-      version: "9.0.x"
-    name: 'Use .NET SDK 9.0.x'
+      version: "9.x"
+    name: 'Use .NET SDK 9.x'
 
   - script: dotnet build --configuration $(buildConfiguration)
     name: 'dotnet Build'
