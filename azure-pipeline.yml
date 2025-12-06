@@ -5,18 +5,18 @@ pool:
   vmImage: "Ubuntu-latest"
 
 trigger:
-  - master
+  - main
 
 variables:
   buildConfiguration: "Release"
 
 steps:
-  # install sdk .net 9.0
+  # install sdk .net 10.0
   - task: UseDotNet@2
-    displayName: 'Use .NET SDK 9.x'
+    displayName: 'Use .NET SDK 10.x'
     inputs:
       packageType: 'sdk'
-      version: '9.x'
+      version: '10.x'
 
   - script: dotnet build --configuration $(buildConfiguration)
     displayName: 'dotnet Build'

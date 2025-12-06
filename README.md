@@ -16,7 +16,7 @@ In order to use this tool, you must have the .NET 8+.
 You can install the tool by running the following line.
 
 ```shell
-dotnet tool install --global sln.launcher --version 2.0.0
+dotnet tool install --global sln.launcher --version 3.0.0
 ```
 
 ## How to use

@@ -1,12 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>sln</ToolCommandName>
-    <Version>2.0.0</Version>
+    <Version>3.0.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>sln.launcher</PackageId>
+    <LangVersion>latest</LangVersion>
+
     <Authors>AClerbois</Authors>
     <Description>Sln.launcher is a dotnet tools allows you to launch Visual Studio with a .sln file
       from a command prompt in the current directory. In the case of several available files, the
@@ -35,6 +37,8 @@
       2.0.0 :
       - Use Spectre.Console to display the list of solutions and selection
       - Remove oldest target framework and support only net8.0 and net9.0
+      3.0.0 :
+      - Add target framework with net10.0
     </PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>

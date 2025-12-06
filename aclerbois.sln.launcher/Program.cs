@@ -8,9 +8,13 @@ namespace aclerbois.sln.launcher;
 
 internal class Program
 {
+    private static readonly string[] SolutionPatterns = ["*.sln", "*.slnx"];
+
     private static void Main(string[] args)
     {
-        var solutionFiles = Directory.EnumerateFiles(Environment.CurrentDirectory, "*.sln", SearchOption.AllDirectories).ToArray();
+        var solutionFiles = SolutionPatterns
+            .SelectMany(pattern => Directory.EnumerateFiles(Environment.CurrentDirectory, pattern, SearchOption.AllDirectories))
+            .ToArray();
 
         if (!solutionFiles.Any())
         {
